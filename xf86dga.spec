@@ -6,10 +6,10 @@ Group:		Development/X11
 Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License:	MIT
 BuildRoot:	%{_tmppath}/%{name}-root
-BuildRequires:	libx11-devel >= 1.0.0
-BuildRequires:	libxxf86dga-devel >= 1.0.0
-BuildRequires:	x11-util-macros >= 1.0.1
-BuildRequires:	autoconf
+
+BuildRequires:	x11-util-macros		>= 1.1.5
+BuildRequires:	libx11-devel		>= 1.1.3
+BuildRequires:	libxxf86dga-devel	>= 1.0.2
 
 %description
 Dga is a simple test client for the XFree86-DGA extension. It fills the screen
@@ -18,8 +18,6 @@ parameters, and also keyboard and pointer events to stdout.
 
 %prep
 %setup -q -n %{name}-%{version}
-
-rm -f configure && autoconf
 
 %build
 autoreconf -ifs
@@ -39,4 +37,3 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %{_bindir}/dga
 %{_mandir}/man1/dga.1*
-
