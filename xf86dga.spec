@@ -1,6 +1,6 @@
 Name:		xf86dga
 Version:	1.0.2
-Release:	%mkrel 3
+Release:	%mkrel 4
 Summary:	Test program for the XFree86-DGA extension
 Group:		Development/X11
 URL:		http://xorg.freedesktop.org
