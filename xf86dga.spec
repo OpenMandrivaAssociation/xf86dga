@@ -1,12 +1,11 @@
 Name:		xf86dga
 Version:	1.0.3
-Release:	%mkrel 2
+Release:	3
 Summary:	Test program for the XFree86-DGA extension
 Group:		Development/X11
 URL:		http://xorg.freedesktop.org
 Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License:	MIT
-BuildRoot:	%{_tmppath}/%{name}-root
 BuildRequires:	pkgconfig(x11) >= 1.0.0
 BuildRequires:	pkgconfig(xxf86dga) >= 1.1.0
 BuildRequires:	x11-util-macros >= 1.0.1
