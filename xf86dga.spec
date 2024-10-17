@@ -3,7 +3,7 @@ Version:	1.0.3
 Release:	14
 Summary:	Test program for the XFree86-DGA extension
 Group:		Development/X11
-URL:		http://xorg.freedesktop.org
+URL:		https://xorg.freedesktop.org
 Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License:	MIT
 BuildRequires:	pkgconfig(x11) >= 1.0.0
